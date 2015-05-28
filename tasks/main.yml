@@ -9,6 +9,8 @@
 
 - name: Install the cask packages
   homebrew_cask: name={{ item }}
+  environment:
+    HOMEBREW_CASK_OPTS: --appdir={{ brew_cask_appdir }}
   with_items: cask_packages
 
 - name: Install homebrew package(s) with brew options

@@ -1,4 +1,5 @@
 ---
+brew_cask_appdir: '~/Applications'
 brew_packages: []
 cask_packages: []
 brew_taps: []
